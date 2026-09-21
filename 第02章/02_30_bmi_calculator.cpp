@@ -7,10 +7,10 @@ int main() {
     double weightInKilograms = 0.0;
     double heightInMeters = 0.0;
 
-    std::cout << "Enter your weight in kilograms: ";
+    std::cout << "Enter your weight in kilograms (e.g. 43): ";
     std::cin >> weightInKilograms;
 
-    std::cout << "Enter your height in meters: ";
+    std::cout << "Enter your height in meters, NOT centimeters (e.g. 1.63): ";
     std::cin >> heightInMeters;
 
     // 计算公式：BMI = 体重(公斤) / 身高(米)的平方
