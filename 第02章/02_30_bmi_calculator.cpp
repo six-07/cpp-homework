@@ -1,32 +1,33 @@
-// 题目 2.30（MEDIUM）：身体质量指数（BMI）计算器
-// 功能：输入体重（公斤）与身高（米），计算 BMI，并显示 BMI 评价标准。
+// 题目 2.30：身体质量指数（BMI）计算器
+// 功能：输入体重（公斤）和身高（米），计算并显示 BMI，同时给出 BMI 评价标准。
+#include <cstdlib>
 #include <iomanip>
 #include <iostream>
+using namespace std;
 
 int main() {
-    double weightInKilograms = 0.0;
-    double heightInMeters = 0.0;
+    double weight = 0.0;    // 体重，单位：公斤
+    double height = 0.0;    // 身高，单位：米
 
-    std::cout << "Enter your weight in kilograms (e.g. 43): ";
-    std::cin >> weightInKilograms;
+    cout << "Input your weight in kilograms:" << endl;
+    cin >> weight;
 
-    std::cout << "Enter your height in meters, NOT centimeters (e.g. 1.63): ";
-    std::cin >> heightInMeters;
+    cout << "Input your height in meters (e.g. 1.63, not 163):" << endl;
+    cin >> height;
 
-    // 计算公式：BMI = 体重(公斤) / 身高(米)的平方
-    double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+    // BMI 公式：体重 ÷ 身高 的平方
+    double bmi = weight / (height * height);
 
-    // fixed + setprecision(1) 让结果只保留一位小数，便于阅读
-    std::cout << "\nYour BMI is "
-              << std::fixed << std::setprecision(1) << bmi << std::endl;
+    // fixed + setprecision(1)：让结果只保留一位小数
+    cout << "\nYour BMI is " << fixed << setprecision(1) << bmi << endl;
 
-    // 美国卫生与公众服务部 / 国立卫生研究院给出的 BMI 判断标准
-    std::cout << "\nBMI VALUES\n"
-              << "Underweight: less than 18.5\n"
-              << "Normal:      between 18.5 and 24.9\n"
-              << "Overweight:  between 25 and 29.9\n"
-              << "Obese:       30 or greater"
-              << std::endl;
+    // 美国卫生与公众服务部 / 国立卫生研究院的 BMI 评价标准
+    cout << "\nBMI VALUES" << endl;
+    cout << "Underweight: less than 18.5" << endl;
+    cout << "Normal: between 18.5 and 24.9" << endl;
+    cout << "Overweight: between 25 and 29.9" << endl;
+    cout << "Obese: 30 or greater" << endl;
 
+    system("pause");
     return 0;
 }

@@ -1,22 +1,24 @@
-// 题目 2.19（EASY）：算术运算、最小值和最大值
-// 功能：输入三个整数，显示它们的和、平均值、乘积、最小值和最大值。
+// 算术运算：求三个整数的和、平均值、乘积、最小值、最大值
+#include <cstdlib>
 #include <iostream>
+using namespace std;
 
 int main() {
     int number1 = 0;
     int number2 = 0;
     int number3 = 0;
 
-    std::cout << "Enter three integers separated by spaces: ";
-    std::cin >> number1 >> number2 >> number3;
+    cout << "Input three different integers:" << endl;
+    cin >> number1 >> number2 >> number3;
 
-    int sum = number1 + number2 + number3;        // 三个数的和
-    int product = number1 * number2 * number3;    // 三个数的乘积
+    // 必须等输入完成后才能计算，否则算的都是初始值 0
+    int sum = number1 + number2 + number3;
+    int product = number1 * number2 * number3;
 
-    // 平均值可能带小数：先把和转成 double 再除以 3，否则整数除法会丢掉小数部分
+    // 平均值可能带小数，所以用 double：先强制转换成小数再除以 3
     double average = static_cast<double>(sum) / 3.0;
 
-    // 依次比较，找出最小值
+    // 找最小值：谁比当前最小值还小，就把最小值换成谁
     int smallest = number1;
     if (number2 < smallest) {
         smallest = number2;
@@ -25,7 +27,7 @@ int main() {
         smallest = number3;
     }
 
-    // 依次比较，找出最大值
+    // 找最大值：同理
     int largest = number1;
     if (number2 > largest) {
         largest = number2;
@@ -34,11 +36,12 @@ int main() {
         largest = number3;
     }
 
-    std::cout << "\nSum is " << sum << std::endl;
-    std::cout << "Average is " << average << std::endl;
-    std::cout << "Product is " << product << std::endl;
-    std::cout << "Smallest is " << smallest << std::endl;
-    std::cout << "Largest is " << largest << std::endl;
+    cout << "Sum is: " << sum << endl;
+    cout << "Average is: " << average << endl;
+    cout << "Product is: " << product << endl;
+    cout << "Smallest is: " << smallest << endl;
+    cout << "Largest is: " << largest << endl;
 
+    system("pause");
     return 0;
 }
