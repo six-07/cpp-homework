@@ -1,0 +1,7 @@
+Enter sales in dollars (-1 to end): Salary is: $650.00
+
+Enter sales in dollars (-1 to end): Salary is: $740.00
+
+Enter sales in dollars (-1 to end): Salary is: $830.00
+
+Enter sales in dollars (-1 to end):

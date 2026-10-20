@@ -21,6 +21,12 @@ echo   [6]  3.14  Employee 类（月薪与年薪）
 echo   [7]  3.15  Date 类（日期合法性）
 echo   [8]  3.05  阶乘计算（练习用）
 echo.
+echo   ---- 第四章 ----
+echo   [9]  4.15  Sales Commission Calculator
+echo   [10] 4.26  Palindromes
+echo   [11] 4.27  Binary to Decimal
+echo   [12] 4.33  Sides of a Right Triangle
+echo.
 echo   [0]  退出
 echo.
 set /p choice=请输入编号后按回车：
@@ -33,6 +39,10 @@ if "%choice%"=="5" call :run 03_11_modifying_gradebook
 if "%choice%"=="6" call :run 03_14_employee_class
 if "%choice%"=="7" call :run 03_15_date_class
 if "%choice%"=="8" call :run 03_05_factorial
+if "%choice%"=="9" call :run 04_15_sales_commission_calculator
+if "%choice%"=="10" call :run 04_26_palindromes
+if "%choice%"=="11" call :run 04_27_binary_to_decimal
+if "%choice%"=="12" call :run 04_33_right_triangle
 if "%choice%"=="0" exit
 goto menu
 
