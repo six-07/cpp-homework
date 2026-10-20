@@ -1,2 +1,0 @@
-Enter a five-digit integer: The digits are: 1 2 3 2 1
-12321 is a palindrome.

@@ -1,1 +1,0 @@
-Enter a binary integer (only 0 and 1): The decimal equivalent of 1101 is 13

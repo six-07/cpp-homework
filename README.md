@@ -14,9 +14,6 @@
 | `build/` | 编译出来的 exe（编译产物，不提交） |
 | `运行程序.bat` | 双击后选编号就能运行做好的题目 |
 | `Git使用手册.md` | 自己整理的 Git 常用命令，忘了就翻一下 |
-| `第04章/第三次作业_完整完成说明.md` | 第三次作业的逐题完成说明和测试记录 |
-| `第04章/提交截图/` | 可直接上传的“代码 + 运行结果”截图和上传清单 |
-| `第04章/VisualStudio/第三次作业.sln` | 第四章四道题的 Visual Studio 解决方案 |
 | `.gitignore` | 忽略 exe 等编译产物，只传源代码 |
 
 ## 作业清单
@@ -35,8 +32,6 @@
 | 4.27 | 二进制数转十进制数 | `第04章/04_27_binary_to_decimal.cpp` |
 | 4.33 | 判断直角三角形的三条边 | `第04章/04_33_right_triangle.cpp` |
 
-第三次作业只要求为 **4.15 Sales Commission Calculator** 写伪代码和自上而下逐步细化，内容见 `第04章/04_15_sales_commission_calculator_pseudocode.md`；其他三题只提交 C++ 程序。
-
 其中 2.19、2.24 和 3.15 是 EASY，除了跑通之外还要在 A4 白纸上手写一遍。
 
 ## 怎么编译运行
@@ -50,7 +45,7 @@ g++ .\第04章\04_15_sales_commission_calculator.cpp -o .\build\04_15_sales_comm
 
 把文件名换成别的题目就能编译其他几题。`-static` 会让 exe 自带运行库，双击也能跑。
 
-也可以在 Visual Studio 中打开 `第04章\VisualStudio\第三次作业.sln`，选择 `Release | x64` 后生成并运行。
+也可以在 Visual Studio 中分别打开第四章的 `.cpp` 文件，按 Ctrl+F5 运行。
 
 ## 提交习惯
 

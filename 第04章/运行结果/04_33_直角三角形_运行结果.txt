@@ -1,1 +1,0 @@
-Enter three nonzero integers: 3, 4, and 5 are the sides of a right triangle.

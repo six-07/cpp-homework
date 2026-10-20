@@ -1,1 +1,0 @@
-Enter three nonzero integers: 2, 3, and 4 are not the sides of a right triangle.
