@@ -27,6 +27,12 @@ echo   [10] 4.26  Palindromes
 echo   [11] 4.27  Binary to Decimal
 echo   [12] 4.33  Sides of a Right Triangle
 echo.
+echo   ---- 第五章 ----
+echo   [13] 5.5   Summing Integers
+echo   [14] 5.12  Drawing Patterns
+echo   [15] 5.15  GradeBook Grade Point Average
+echo   [16] 5.20  Pythagorean Triples
+echo.
 echo   [0]  退出
 echo.
 set /p choice=请输入编号后按回车：
@@ -43,6 +49,10 @@ if "%choice%"=="9" call :run 04_15_sales_commission_calculator
 if "%choice%"=="10" call :run 04_26_palindromes
 if "%choice%"=="11" call :run 04_27_binary_to_decimal
 if "%choice%"=="12" call :run 04_33_right_triangle
+if "%choice%"=="13" call :run 05_05_summing_integers
+if "%choice%"=="14" call :run 05_12_drawing_patterns
+if "%choice%"=="15" call :run 05_15_gradebook_grade_point_average
+if "%choice%"=="16" call :run 05_20_pythagorean_triples
 if "%choice%"=="0" exit
 goto menu
 
