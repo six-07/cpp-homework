@@ -1,6 +1,7 @@
 // 题目 4.26：Palindromes
 // 读入一个五位整数，用除法和取余分离各位数字，
 // 判断它从前往后和从后往前读是否相同。
+#include <cstdlib>
 #include <iostream>
 #include <limits>
 using namespace std;
@@ -31,5 +32,6 @@ int main() {
         cout << number << " is not a palindrome." << endl;
     }
 
+    system("pause");
     return 0;
 }

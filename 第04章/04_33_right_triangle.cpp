@@ -1,6 +1,7 @@
 // 题目 4.33：Sides of a Right Triangle
 // 读入三个非零整数，判断它们能否作为直角三角形的三条边。
 // 判据：最长边的平方等于另外两条边的平方和。
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
@@ -14,6 +15,7 @@ int main() {
 
     if (!cin || side1 == 0 || side2 == 0 || side3 == 0) {
         cout << "All three sides must be nonzero integers." << endl;
+        system("pause");
         return 0;
     }
 
@@ -44,5 +46,6 @@ int main() {
              << " are not the sides of a right triangle." << endl;
     }
 
+    system("pause");
     return 0;
 }

@@ -1,5 +1,6 @@
 // 题目 2.24（EASY）：判断奇数还是偶数
 // 功能：读入一个整数，判断它是奇数还是偶数并输出结果。
+#include <cstdlib>
 #include <iostream>
 
 int main() {
@@ -16,5 +17,6 @@ int main() {
         std::cout << number << " is odd." << std::endl;
     }
 
+    system("pause");
     return 0;
 }

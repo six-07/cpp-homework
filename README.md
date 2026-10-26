@@ -48,7 +48,7 @@ g++ .\第04章\04_15_sales_commission_calculator.cpp -o .\build\04_15_sales_comm
 .\build\04_15_sales_commission_calculator.exe
 ```
 
-把文件名换成别的题目就能编译其他几题。`-static` 会让 exe 自带运行库，双击也能跑。
+把文件名换成别的题目就能编译其他几题。`-static` 会让 exe 自带运行库，双击也能跑。所有程序结束前都会暂停，显示“请按任意键继续”，方便查看或截图运行结果。
 
 也可以在 Visual Studio 中分别打开第四章的 `.cpp` 文件，按 Ctrl+F5 运行。
 

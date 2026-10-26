@@ -1,5 +1,6 @@
 // 练习题目：计算阶乘
 // 功能：输入一个非负整数 n，计算并输出 n 的阶乘（n!）。
+#include <cstdlib>
 #include <iostream>
 
 int main() {
@@ -22,5 +23,6 @@ int main() {
 
     std::cout << n << "! = " << factorial << std::endl;
 
+    system("pause");
     return 0;
 }

@@ -1,6 +1,7 @@
 // 题目 5.15：GradeBook Modification
 // 在原 GradeBook 程序的基础上统计各等级人数，并计算平均绩点：
 // A = 4，B = 3，C = 2，D = 1，F = 0。
+#include <cstdlib>
 #include <iomanip>
 #include <iostream>
 #include <string>
@@ -113,5 +114,6 @@ int main() {
     myGradeBook.inputGrades();
     myGradeBook.displayGradeReport();
 
+    system("pause");
     return 0;
 }

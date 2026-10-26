@@ -1,6 +1,7 @@
 // 题目 4.27：Printing the Decimal Equivalent of a Binary Number
 // 读入一个只含 0 和 1 的整数，利用取余和整除从右向左取出每一位，
 // 按二进制位权累加，得到对应的十进制数。
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
@@ -41,5 +42,6 @@ int main() {
         cout << "Invalid input: the number may contain only 0 and 1." << endl;
     }
 
+    system("pause");
     return 0;
 }

@@ -1,5 +1,6 @@
 // 题目 5.5：Summing Integers
 // 先读入整数个数，再使用 for 语句逐个读入这些整数并求和。
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
@@ -22,5 +23,6 @@ int main() {
     }
 
     cout << "Sum = " << sum << endl;
+    system("pause");
     return 0;
 }

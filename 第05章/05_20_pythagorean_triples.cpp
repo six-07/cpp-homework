@@ -1,6 +1,7 @@
 // 题目 5.20：Pythagorean Triples
 // 使用三重循环枚举三条边，找出所有 a^2 + b^2 = c^2 且三边均不超过 500 的组合。
 // 限定 side1 < side2 < hypotenuse，避免交换两条直角边后重复输出。
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
@@ -24,5 +25,6 @@ int main() {
     }
 
     cout << "Total: " << tripleCount << " triples." << endl;
+    system("pause");
     return 0;
 }

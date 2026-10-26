@@ -1,6 +1,7 @@
 // 题目 4.15：Sales Commission Calculator
 // 每名销售员每周固定工资 200 美元，另加当周销售额的 9%。
 // 程序使用 while 语句一次处理一名销售员的销售额，输入 -1 时结束。
+#include <cstdlib>
 #include <iomanip>
 #include <iostream>
 using namespace std;
@@ -26,5 +27,6 @@ int main() {
     }
 
     cout << endl;
+    system("pause");
     return 0;
 }

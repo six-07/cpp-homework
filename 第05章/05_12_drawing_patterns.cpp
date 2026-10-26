@@ -1,6 +1,7 @@
 // 题目 5.12：Drawing Patterns with Nested for Loops
 // 先按题目要求把四个图案分开纵向输出；
 // 再完成 Extra Credit：在同一行的四个列中并排输出四个图案。
+#include <cstdlib>
 #include <iostream>
 using namespace std;
 
@@ -89,5 +90,6 @@ int main() {
     cout << "\nExtra credit: all four patterns side by side" << endl;
     printPatternsSideBySide();
 
+    system("pause");
     return 0;
 }
